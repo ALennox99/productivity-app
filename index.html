@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productivity App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Productivity App</h1>
+
+  <form id="task-form">
+    <input type="text" id="task-title" placeholder="Task title" required />
+    <textarea id="task-desc" placeholder="Optional description"></textarea>
+    <input type="date" id="task-date" />
+    <button type="submit">Add Task</button>
+  </form>
+
+  <div id="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="completed">Completed</button>
+    <button data-filter="upcoming">Upcoming</button>
+  </div>
+
+  <ul id="task-list"></ul>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

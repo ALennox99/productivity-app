@@ -1,0 +1,137 @@
+/* Reset & base */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Container */
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+/* Form */
+#task-form {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#task-form input[type="text"],
+#task-form textarea,
+#task-form input[type="date"] {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+#task-form button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#task-form button:hover {
+  background-color: #219150;
+}
+
+/* Filters */
+#filters {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#filters button {
+  background: none;
+  border: 1px solid #27ae60;
+  color: #27ae60;
+  padding: 0.4rem 1rem;
+  margin: 0 0.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#filters button:hover,
+#filters button.active {
+  background-color: #27ae60;
+  color: white;
+}
+
+/* Task list */
+#task-list {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.task-item {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.task-item input[type="checkbox"] {
+  margin-bottom: 0.5rem;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.task-item strong {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.task-item em {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.task-item p {
+  margin-top: 0.4rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.delete-btn {
+  align-self: flex-end;
+  background: #e74c3c;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
